@@ -88,6 +88,7 @@ export default {
         const displayError = document.getElementById('card-errors');
         if (error) {
           displayError.textContent = error.message;
+          this.$emit('error', error);
           return;
         }
         displayError.textContent = '';
