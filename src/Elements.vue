@@ -106,13 +106,13 @@ export default {
           if (error) {
             const errorElement = document.getElementById('card-errors');
             errorElement.textContent = error.message;
-            console.error(error);
+            console.error('Error 1', error);
             this.$emit('error', error);
             return;
           }
           this.$emit('token', token);
         } catch (error) {
-          console.error(error);
+          console.error('Error 2', error);
           this.$emit('error', error);
         } finally {
           this.$emit('loading', false);
