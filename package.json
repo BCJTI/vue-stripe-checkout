@@ -3,7 +3,7 @@
   "version": "3.5.11",
   "description": "Vue plugin for Stripe checkout.",
   "main": "src/index.js",
-  "module": "dist",
+  "module": "src",
   "typings": "typings/index.d.ts",
   "scripts": {
     "test": "jest",
