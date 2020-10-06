@@ -107,7 +107,7 @@ export default {
             const errorElement = document.getElementById('card-errors');
             errorElement.textContent = error.message;
             console.error(error);
-            this.$emit('error 1', error);
+            this.$emit('error', error);
             return;
           }
           this.$emit('token', token);
