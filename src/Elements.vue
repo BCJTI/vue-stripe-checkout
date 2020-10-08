@@ -119,6 +119,9 @@ export default {
         }
       });
     });
+  },
+  destroyed() {
+    delete window.Stripe;
   }
 }
 </script>
